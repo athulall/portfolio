@@ -1,0 +1,105 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-div {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0F0F0F, #0D7377);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Content Card */
+.about-div .col-md-8 {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  animation: fadeUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+/* Fade Animation */
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Heading */
+.about-div h1 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-div h1::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #14FFEC;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* Paragraph */
+.about-div p {
+  color: #e5e5e5;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .about-div .col-md-8 {
+    padding: 40px;
+  }
+
+  .about-div p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-div {
+    padding: 40px 15px;
+  }
+
+  .about-div .col-md-8 {
+    padding: 30px;
+  }
+
+  .about-div h1 {
+    font-size: 30px;
+  }
+
+  .about-div p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-div .col-md-8 {
+    padding: 25px;
+  }
+
+  .about-div p {
+    font-size: 15px;
+  }
+}

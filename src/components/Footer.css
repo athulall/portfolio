@@ -1,0 +1,37 @@
+.footer {
+  background: radial-gradient(circle, #0D7377, #0F0F0F);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  height: 100px;
+ opacity: 100%;
+}
+
+
+.footer-socials {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-socials {
+  background: none;
+}
+
+.footer-socials a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #0D7377;
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
