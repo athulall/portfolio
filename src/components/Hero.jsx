@@ -64,9 +64,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 import React from "react";
 import "./Hero.css";
-import image from "../assets/image.png";
+import image from "../assets/image2.jpeg";
 
 const Hero = () => {
   return (
@@ -84,10 +94,15 @@ const Hero = () => {
             like React, JavaScript, Node.js, Bootstrap and many modern frameworks.
           </p>
 
-          <div className="lft-btn">
-            <button className="lbn">Contact Me</button>
-            <button className="rbtn">Details</button>
-          </div>
+        <div className="lft-btn">
+  <a href="#contact">
+    <button className="lbn">Contact Me</button>
+  </a>
+
+  <a href="#about">
+    <button className="rbtn">Details</button>
+  </a>
+</div>
 
         </div>
 
@@ -110,3 +125,9 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+
+

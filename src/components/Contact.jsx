@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import axios from 'axios'
-import './Contact.css'
+import React, { useState } from "react";
+import axios from "axios";
+import "./Contact.css";
 
 const Contact = () => {
+
+  const API = import.meta.env.VITE_API_URL;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -11,7 +13,6 @@ const Contact = () => {
     message: ""
   });
 
-  // Handle Input Change
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,19 +20,18 @@ const Contact = () => {
     });
   };
 
-  // Handle Submit
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
+
       const response = await axios.post(
-        "http://localhost:4000/api/contact/send",
+        `${API}/api/contact/send`,
         formData
       );
 
       alert(response.data.message);
 
-      // Clear form after submit
       setFormData({
         name: "",
         phone: "",
@@ -48,7 +48,8 @@ const Contact = () => {
   return (
     <section id="contact">
       <form onSubmit={handleSubmit}>
-        <div className='contact'>
+        <div className="contact">
+
           <h1>Contact Me</h1>
 
           <label>Name</label>
@@ -95,7 +96,7 @@ const Contact = () => {
         </div>
       </form>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -6,10 +6,10 @@ const Footer = () => {
     <div>
   <footer className="footer">
       <div className="footer-socials">
-        <a href="https://github.com/athul" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/athulall" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com/in/athul" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/athul-lal-vl" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
         <a href="mailto:athullal77@gmail.com">
@@ -28,6 +28,128 @@ const Footer = () => {
 }
 
 export default Footer  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

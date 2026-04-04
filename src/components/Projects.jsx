@@ -1,33 +1,40 @@
 import React from "react";
 import "./Projects.css";
 
-import ecommerceImg from "../assets/ecommerce.png";
-import portfolioImg from "../assets/portfolio.png";
-import taskImg from "../assets/taskmanager.png";
+import ecommerceImg from "../assets/ecomm.jpeg";
+import wImg from "../assets/weather.jpeg";
+import taskImg from "../assets/taskmanager.jpeg";
 
 const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Website",
+      title: "Clothing Store",
       description:
-        "Full stack MERN e-commerce application with authentication and cart system.",
+        "MERN clothing store with voice search, AI product description generator in admin dashboard.",
       image: ecommerceImg,
-      link: "https://yourprojectlink.com"
+      link: "https://github.com/athulall/ecommerce"
+    },
+    {
+      title: "AI Chatbot",
+      description:
+        "MERN AI chatbot system using OpenRouter API for intelligent conversations.",
+      image: taskImg,
+      link: "https://github.com/athulall/mern-Ai"
     },
     {
       title: "Portfolio Website",
       description:
         "Personal portfolio built using React and modern UI design.",
-      image: portfolioImg,
-      link: "https://yourportfoliolink.com"
+      image: taskImg,
+      link: "https://github.com/athulall/portfolio"
     },
     {
-      title: "Task Manager App",
+      title: "Weather App",
       description:
-        "CRUD application with Node.js, Express and MongoDB.",
-      image: taskImg,
-      link: "https://yourtaskmanagerlink.com"
+        "Weather application built using JavaScript, HTML, and CSS.",
+      image: wImg,
+      link: "https://github.com/athulall/js_mini_project_1.0"
     }
   ];
 
